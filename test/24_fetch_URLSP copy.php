@@ -38,8 +38,6 @@
             .then(txt=>{
                 result.innerText = txt;
             });
-
-
     }
 </script>
 </body>
