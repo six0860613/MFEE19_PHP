@@ -71,7 +71,7 @@ if (isset($_SESSION['user'])) {
                     if (obj.login_success) {
                         location.href = 'index_.php';
                     } else {
-                        alert(obj.error_message);
+                        alert(obj.error);
                     }
                 });
         }
