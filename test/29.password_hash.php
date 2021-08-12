@@ -8,7 +8,7 @@ echo password_hash($p, PASSWORD_DEFAULT);
 echo '<br>';
 echo '<br>';
 
-echo password_verify('123456', $hash) ? 'YES' : 'NO';
+echo password_verify('123456', $p) ? 'YES' : 'NO';
 
 
 /*可用簡易的SQL語法比對帳號密碼(MD5也適用)

@@ -9,7 +9,7 @@ $output = [
 ];
 
 //若未傳入資料時的檢查
-if(! isset($_POST['account']) or ! isset($_POST['password'])){
+if(empty($_POST['account']) or empty($_POST['password'])){
     $output['error'] = '未填寫帳號或密碼';
     $output['code'] = 400;
     echo json_encode($output, JSON_UNESCAPED_UNICODE);
